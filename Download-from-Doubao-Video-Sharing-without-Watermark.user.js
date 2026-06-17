@@ -204,8 +204,14 @@ async function getPromptText() {
 }
 
 async function downloadPromptAsTXT() {
+    let text;
+    const url = new URL(location.href);
     const promptText = await getPromptText();
-    const blob = new Blob([promptText], {type: 'text/plain'});
+
+    text = url + '\n\n' + promptText;
+
+    const blob = new Blob([text], {type: 'text/plain'});
+
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
 
@@ -286,9 +292,7 @@ async function getCrossOriginVideo(link) {
 function getVideoName() {
     let url = new URL(location.href);
     let vid = url.searchParams.get('video_id');
-    let shareId = url.searchParams.get('share_id');
-
-    const videoName = 'video_id-' + vid + '_&_share_id-' + shareId;
+    const videoName = 'video_id-' + vid;
 
     return videoName;
 }
