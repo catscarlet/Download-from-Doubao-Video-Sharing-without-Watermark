@@ -83,6 +83,10 @@ Github： <https://github.com/catscarlet/Download-from-Doubao-Video-Sharing-with
 - [从豆包下载 无水印 图片 Download Origin Image from Doubao without Watermark](https://greasyfork.org/scripts/527890)，这个用户脚本可以帮助你下载自己豆包帐号下生成的预览内容
 - [从即梦AI下载无水印视频和图片 Download Origin Video from JiMeng without Watermark](https://greasyfork.org/scripts/541644)，这个用户脚本可以帮助你下载自己即梦帐号下生成的预览内容
 
+## 推荐项目
+
+- [scrcpy](https://github.com/Genymobile/scrcpy/)，这个应用可以让你更方便的使用电脑（Linux，Windows，macOS）操作安卓手机端，支持 **剪切板同步** 和 **文件推送** 等多种功能。
+
 ## LICENSE
 
 This project is licensed under **GNU AFFERO GENERAL PUBLIC LICENSE Version 3**
