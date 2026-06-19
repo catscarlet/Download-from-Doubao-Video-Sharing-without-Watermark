@@ -38,6 +38,7 @@
 在完成安装用户脚本管理器后，安装本用户脚本。以下提供几个安装渠道：
 
 - 【推荐】Greasyfork脚本安装地址：<https://greasyfork.org/scripts/582844>，点击页面上的 _安装此脚本_ 即可
+- （Greasyfork镜像站）Greasyfork.icu脚本安装地址：<https://greasyfork.icu/zh-CN/scripts/582844>，点击页面上的 _安装此脚本_ 即可。
 - 如果您访问 greasyfork.org 有困难，可以尝试这个 [GitHub链接](https://raw.githubusercontent.com/catscarlet/Download-from-Doubao-Video-Sharing-without-Watermark/refs/heads/main/Download-from-Doubao-Video-Sharing-without-Watermark.user.js) 进行安装。注意这个链接指向的地址为本项目的仓库，对应的文件可能比 Greasyfork 要新且可能包含一些新功能和不稳定的更改。
 
 请注意：本脚本仅在 「Greasyfork 」与「GitHub」上进行发布和维护。对于镜像站可能产生的包括且不限于安全相关的问题概不负责。
