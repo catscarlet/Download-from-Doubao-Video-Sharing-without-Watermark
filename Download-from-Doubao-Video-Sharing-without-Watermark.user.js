@@ -1,9 +1,11 @@
 // ==UserScript==
 // @name            从豆包分享页面下载无水印视频 Download-from-Doubao-Video-Sharing-without-Watermark
+// @name:zh         从豆包分享页面下载无水印视频 Download-from-Doubao-Video-Sharing-without-Watermark
 // @name:en         Download-from-Doubao-Video-Sharing-without-Watermark 从豆包分享页面下载无水印视频
 // @namespace       https://github.com/catscarlet/Download-from-Doubao-Video-Sharing-without-Watermark
-// @description     这是一个可以让你从豆包分享页面（https://www.doubao.com/video-sharing）下载无水印视频的用户脚本  You can try this userscript to Download Video from <www.doubao.com/video-sharing> without Watermark.
-// @description:en  You can try this userscript to Download Video from <www.doubao.com/video-sharing> without Watermark. 这是一个可以让你从豆包分享页面（https://www.doubao.com/video-sharing）下载无水印视频的用户脚本
+// @description     这是一个可以让你从豆包分享页面（https://www.doubao.com/video-sharing）下载无水印视频的用户脚本。 You can try this userscript to Download Video from <www.doubao.com/video-sharing> without Watermark.
+// @description:zh  这是一个可以让你从豆包分享页面（https://www.doubao.com/video-sharing）下载无水印视频的用户脚本。 You can try this userscript to Download Video from <www.doubao.com/video-sharing> without Watermark.
+// @description:en  You can try this userscript to Download Video from <www.doubao.com/video-sharing> without Watermark. 这是一个可以让你从豆包分享页面（https://www.doubao.com/video-sharing）下载无水印视频的用户脚本。
 // @version         0.0.1
 // @author          catscarlet
 // @license         GNU Affero General Public License v3.0
