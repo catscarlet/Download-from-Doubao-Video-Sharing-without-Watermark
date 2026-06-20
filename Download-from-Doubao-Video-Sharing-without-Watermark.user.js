@@ -16,6 +16,7 @@
 
 const customPostfixName = '';
 const bannerClassName = '.banner-JSgbIO';
+let isDownloading = false;
 
 (function() {
     'use strict';
@@ -244,6 +245,11 @@ function clickExpandAndGetText(expandBtn) {
 }
 
 async function getCrossOriginVideo(link) {
+    if (isDownloading) {
+        return;
+    } else {
+        isDownloading = true;
+    }
     const btnOriginStyle = {};
     btnOriginStyle.cursor = link.style.cursor;
     btnOriginStyle.backgroundColor = link.style.backgroundColor;
@@ -280,6 +286,7 @@ async function getCrossOriginVideo(link) {
             document.body.removeChild(a);
             link.style.cursor = btnOriginStyle.cursor;
             link.style.backgroundColor = btnOriginStyle.backgroundColor;
+            isDownloading = false;
         }, 1000);
 
     } catch (error) {
