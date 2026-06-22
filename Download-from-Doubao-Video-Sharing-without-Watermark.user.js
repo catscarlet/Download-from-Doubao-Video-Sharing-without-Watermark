@@ -84,12 +84,10 @@ function createDownloadButtons(bannerItem) {
     links.style.left = left;
     links.style.top = top;
 
-    let main_url = getUrlByVid(vid);
-
     let promptDownloadButton = createPromptDownloadButton();
     links.appendChild(promptDownloadButton);
 
-    let rawVideoDownloadButton = createOneRawVideoDownloadButton(vid, main_url);
+    let rawVideoDownloadButton = createOneRawVideoDownloadButton(vid);
     links.appendChild(rawVideoDownloadButton);
 
     return links;
@@ -136,11 +134,10 @@ function createPromptDownloadButton() {
     return link;
 }
 
-function createOneRawVideoDownloadButton(k, v) {
+function createOneRawVideoDownloadButton(vid) {
     const link = document.createElement('a');
 
-    link.k = k;
-    link.v = v;
+    link.dataset.vid = vid;
 
     link.textContent = '点击下载无水印视频';
     link.style.whiteSpace = 'break-spaces';
@@ -256,7 +253,8 @@ async function getCrossOriginVideo(link) {
     link.style.cursor = 'wait';
     link.style.backgroundColor = 'grey';
 
-    let videoUrl = await link.v;
+    const vid = link.dataset.vid;
+    let videoUrl = await getUrlByVid(vid);
 
     let videoName = getVideoName();
     if (customPostfixName) {
