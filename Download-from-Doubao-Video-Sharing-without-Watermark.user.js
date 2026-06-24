@@ -182,11 +182,11 @@ async function getPromptText() {
     let expandBtn = document.querySelector('.semi-typography-ellipsis-expand');
 
     if (!expandBtn) {
-        console.warn('未找到展开按钮元素 .semi-typography-ellipsis-expand');
-        return false;
-    }
+        const promptNode = document.querySelector('.semi-typography');
+        promptText = promptNode ? promptNode.textContent.trim() : '';
 
-    if (expandBtn.text == '收起') {
+        return promptText;
+    } else if (expandBtn.text == '收起') {
         const promptNode = expandBtn.previousSibling;
         promptText = promptNode ? promptNode.textContent.trim() : '';
 
