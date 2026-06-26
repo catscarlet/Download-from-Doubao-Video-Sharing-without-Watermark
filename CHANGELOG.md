@@ -4,6 +4,11 @@
 
 **Notice doubao.com is using *canary release* so this new release will not work for old web version. If your web version is not changed, use the old release instead.**
 
+## 0.0.3
+
+- Fix download-prompt is false when the prompt text is without expand button.
+- Set no referrer when getting video url
+
 ## 0.0.2
 
 - Rewrite url query logic to prevent unnecessary request.
