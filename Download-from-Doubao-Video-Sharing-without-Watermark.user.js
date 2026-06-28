@@ -305,13 +305,6 @@ function getVideoName() {
     return videoName;
 }
 
-function getKeyFromUrl(url) {
-    const UrlObj = new URL(url);
-    const urlKey = UrlObj.pathname;
-
-    return urlKey;
-}
-
 async function getUrlByVid(vid) {
     const url = 'https://www.doubao.com/samantha/media/get_play_info?version_code=20800&language=zh-CN&device_platform=web&aid=497858&real_aid=497858&pkg_type=release_version&device_id=&pc_version=2.51.7&region=&sys_region=&samantha_web=1&use-olympus-account=1&web_tab_id=';
 
