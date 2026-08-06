@@ -310,6 +310,11 @@ function getVideoName() {
 async function getUrlByVid(vid) {
     const videoModel = await getDoubaoVideoModelFromVideoId(vid);
 
+    if (!videoModel) {
+
+        return false;
+    }
+
     const urlList = await getUrlByModel(videoModel);
     const randomPickedVideoUrl = urlList[Math.floor(Math.random() * urlList.length)];
 
@@ -330,7 +335,16 @@ async function getDoubaoVideoModelFromVideoId(vid) {
     });
 
     const result = await response.json();
+
+    if (result.code != 0) {
+        console.log(result);
+        alert(result.msg);
+
+        return false;
+    }
+
     let videoModel = JSON.parse(result.data.results[0].video_model_result.video_model);
+
     return videoModel;
 }
 
