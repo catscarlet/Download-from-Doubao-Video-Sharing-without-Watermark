@@ -4,6 +4,10 @@
 
 **Notice doubao.com is using *canary release* so this new release will not work for old web version. If your web version is not changed, use the old release instead.**
 
+## 0.1.0
+
+- **Support no-watermark-video-download after 2026.07.03 doubao update.**
+
 ## 0.0.3
 
 - Fix download-prompt is false when the prompt text is without expand button.

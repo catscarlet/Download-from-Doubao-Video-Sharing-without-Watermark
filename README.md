@@ -58,6 +58,10 @@
 
 （提示：如果你只想下载自己帐号下生成的视频，可以直接使用这个用户脚本：[Download Raw Image and Raw Video from doubao.com without Watermark Experimental 从豆包下载无水印原图和无水印视频实验版](https://greasyfork.org/scripts/555118)。免去在手机上「复制链接」的步骤）
 
+注意：初次使用时，因本用户脚本使用脚本管理器的 `GM_xmlhttpRequest` 特性进行跨域请求，脚本管理器会询问是否允许访问跨域资源。请允许此类操作。
+
+如您失误点击了禁止并将其加入了黑名单，则请打开脚本编辑器，编辑本脚本，并点击标签页上的Setting，然后在页面内找到 `XHR Security` 并在 `User domain blacklist` 中将域名移除黒名单。
+
 ### 兼容性
 
 脚本可正确在以下用户脚本管理器中运行：
@@ -70,6 +74,10 @@
 -   Firefox: 151.0.4
 -   Firefox ESR: 115.22.0esr (Win7 可用)
 -   Chrome: 109.0.5414.120 (Win7 可用)(Chrome版本小于120需要使用 Tampermonkey Legacy)
+
+### 已知问题
+
+-   目前下载无水印视频所调用的API，需要用户在浏览器登录豆包后才能访问。因此，目前无法在无登录状态的浏览器匿名模式/隐私模式下使用。
 
 ## 源码
 
