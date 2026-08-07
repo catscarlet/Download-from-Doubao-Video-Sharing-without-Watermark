@@ -332,6 +332,7 @@ async function getDoubaoVideoModelFromVideoId(vid) {
                 uri: vid,
             },],
         }),
+        referrer: '',
     });
 
     const result = await response.json();
