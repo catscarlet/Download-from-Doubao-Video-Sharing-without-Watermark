@@ -12,6 +12,7 @@
 // @match           https://www.doubao.com/video-sharing?*
 // @run-at          document-end
 // @grant           GM_xmlhttpRequest
+// @connect         vas-lf-x.snssdk.com
 // ==/UserScript==
 
 const customPostfixName = '';
